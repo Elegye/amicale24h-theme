@@ -12975,8 +12975,15 @@ body {
 
 @media screen and (max-width: 1023px) {
   #hero .hero-body h1 {
-    -webkit-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
+    -webkit-transition: all 800ms ease-in-out;
+    transition: all 800ms ease-in-out;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #hero .hero-body h1 {
+    -webkit-transition: all 800ms ease-out;
+    transition: all 800ms ease-out;
   }
 }
 
@@ -12986,13 +12993,27 @@ body {
 
 @media screen and (max-width: 1023px) {
   #hero .hero-body h2 {
-    -webkit-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
+    -webkit-transition: all 800ms ease-in-out;
+    transition: all 800ms ease-in-out;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #hero .hero-body h2 {
+    -webkit-transition: all 800ms ease-out;
+    transition: all 800ms ease-out;
   }
 }
 
 #hero .hero-footer .title {
   color: #ffffff;
+}
+
+@media screen and (max-width: 1023px) {
+  #hero .hero-footer {
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+  }
 }
 
 .navbar {
@@ -13017,6 +13038,12 @@ footer .columns .column {
 
 footer .columns .column:last-child {
   border: none;
+}
+
+@media screen and (max-width: 768px) {
+  footer .columns .column {
+    border: none;
+  }
 }
 
 footer .last__articles a::before {

@@ -53,13 +53,19 @@ body{
         h1{
             color: white;
             @include touch{
-                transition: all 1s ease-in-out;
+                transition: all 800ms ease-in-out;
+            }
+            @include desktop{
+                transition: all 800ms ease-out;
             }
         }
         h2{
             color: white;
             @include touch{
-                transition: all 1s ease-in-out;
+                transition: all 800ms ease-in-out;
+            }
+            @include desktop{
+                transition: all 800ms ease-out;
             }
         }
     }
@@ -67,6 +73,10 @@ body{
     .hero-footer{
         .title{
             color: $white;
+        }
+
+        @include touch{
+            transition: all 1s ease-out;
         }
     }
 }
@@ -97,6 +107,10 @@ footer{
             border-right: 1px solid black;
 
             &:last-child{
+                border: none;
+            }
+
+            @include mobile{
                 border: none;
             }
         }
