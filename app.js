@@ -21,14 +21,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       });
     }
-
-    document.addEventListener("scroll", () => {
-        if(window.scrollY > 50){
-            document.getElementById("navbar").classList.add("is-scrolled");
-        }
-        else{
-            document.getElementById("navbar").classList.remove("is-scrolled");
-        }
-    });
   
   });

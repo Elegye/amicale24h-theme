@@ -32,6 +32,7 @@ nav #navbar{
         .navbar-item{
             color: white;
             font-size: 24px;
+            line-height: 29px;
 
             @include touch{
                 color: $black;
@@ -87,4 +88,24 @@ nav #navbar{
     .box{
         background-color: transparent !important;
     }
+}
+
+footer{
+
+    .columns{
+        .column{
+            border-right: 1px solid black;
+
+            &:last-child{
+                border: none;
+            }
+        }
+    }
+
+    .last__articles{
+        a::before{
+            content: "> ";
+        }
+    }
+
 }

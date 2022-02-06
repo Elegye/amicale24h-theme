@@ -12946,6 +12946,7 @@ nav #navbar .is-scrolled {
 #hero .hero-head .navbar-item {
   color: white;
   font-size: 24px;
+  line-height: 29px;
 }
 
 @media screen and (max-width: 1023px) {
@@ -12998,5 +12999,17 @@ nav #navbar .is-scrolled {
 
 #articles .box {
   background-color: transparent !important;
+}
+
+footer .columns .column {
+  border-right: 1px solid black;
+}
+
+footer .columns .column:last-child {
+  border: none;
+}
+
+footer .last__articles a::before {
+  content: "> ";
 }
 /*# sourceMappingURL=style.css.map */
