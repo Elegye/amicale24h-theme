@@ -1,0 +1,90 @@
+@import "./node_modules/bulma/sass/utilities/initial-variables.sass";
+@import "./node_modules/bulma/sass/utilities/functions.sass";
+//@import "./node_modules/bulma/sass/helpers/spacing.sass";
+
+$background:rgb(216, 227, 235);
+$orange:rgb(229, 102, 1);
+$white:#ffffff;
+
+$primary: $orange;
+
+@import "./node_modules/bulma/bulma.sass";
+
+body{
+    background: $background;
+}
+
+nav #navbar{
+    .is-scrolled{
+        background-color: red;
+    }
+}
+
+#hero {
+    width: 100%;
+    background: url('./assets/hero_1.jpg');
+    background-position: center;
+    background-size: cover;
+    font-family: 'Big Shoulders Display', sans-serif;
+
+    .hero-head{
+
+        .navbar-item{
+            color: white;
+            font-size: 24px;
+
+            @include touch{
+                color: $black;
+            }
+
+            &:hover{
+                color: $orange;
+            }
+
+            &:last-child{
+                color: $orange;
+                @include desktop{
+                    margin-left: map-get($map: $spacing-values, $key: "3");
+                }
+            }
+        }
+
+        .navbar-burger{
+            color: $white;
+        }
+    }
+    
+    .hero-body{
+        h1{
+            color: white;
+        }
+        h2{
+            color: white;
+        }
+    }
+    
+    .hero-footer{
+        .title{
+            color: $white;
+        }
+    }
+}
+
+.navbar{
+    height: 100px;
+    #logo{
+        height: 110px;
+    }
+}
+
+#calendar{
+    .column{
+        max-height: 50%;
+    }
+}
+
+#articles{
+    .box{
+        background-color: transparent !important;
+    }
+}
