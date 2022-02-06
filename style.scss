@@ -14,12 +14,6 @@ body{
     background: $background;
 }
 
-nav #navbar{
-    .is-scrolled{
-        background-color: red;
-    }
-}
-
 #hero {
     width: 100%;
     background: url('./assets/hero_1.jpg');
@@ -58,9 +52,15 @@ nav #navbar{
     .hero-body{
         h1{
             color: white;
+            @include touch{
+                transition: all 1s ease-in-out;
+            }
         }
         h2{
             color: white;
+            @include touch{
+                transition: all 1s ease-in-out;
+            }
         }
     }
     

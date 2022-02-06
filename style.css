@@ -12931,10 +12931,6 @@ body {
   background: #d8e3eb;
 }
 
-nav #navbar .is-scrolled {
-  background-color: red;
-}
-
 #hero {
   width: 100%;
   background: url("./assets/hero_1.jpg");
@@ -12977,8 +12973,22 @@ nav #navbar .is-scrolled {
   color: white;
 }
 
+@media screen and (max-width: 1023px) {
+  #hero .hero-body h1 {
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+}
+
 #hero .hero-body h2 {
   color: white;
+}
+
+@media screen and (max-width: 1023px) {
+  #hero .hero-body h2 {
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
 }
 
 #hero .hero-footer .title {
